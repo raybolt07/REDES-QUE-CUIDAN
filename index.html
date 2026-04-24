@@ -3,40 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto QR</title>
+    <title>Redes que Cuidan - Salud Mental</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f0f2f5;
-        }
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        img {
-            margin-top: 15px;
-            border: 5px solid #fff;
-        }
+        /* Estilos tipo App para el celu */
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; margin: 0; padding: 15px; }
+        .header { text-align: center; padding: 20px; background: #2e7d32; color: white; border-radius: 15px; margin-bottom: 20px; shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 6px solid #2e7d32; }
+        h2 { margin: 0 0 5px 0; font-size: 18px; color: #1b5e20; }
+        p { margin: 0 0 15px 0; color: #666; font-size: 14px; }
+        .btn-call { display: block; background-color: #2e7d32; color: white; text-align: center; padding: 12px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; }
+        .btn-call:active { background-color: #1b5e20; transform: scale(0.98); }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>tu salud mental importa</h1>
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=700x700+0&data=💚+NUMEROS+QUE+AYUDAN💚%0A%0AHOSP+Y+DISP%0A%0A🏥+Hosp+ Nac.+en+Red+Lic.+Laura+Bonaparte%0A📍+Combate+de+los+Pozos+2133,+CABA%0A📞+(011)+4305-0091+0800-999-0091%0A🚨+Atención+integral+y+guardia+24+hs%0A🏥Hosp+de+Emergencias+Psiquiátricas+Torcuato+de+Alvear%0A📍+Av+Warnes+2630,+CABA%0A📞+(011)+4521-0090%0AURGENCIAS+PSIQUIATRICAS%0A🏥+Hosp+de+Salud+Mental+José+T.+Borda%0A📍+Dr.+Ramón+Carrillo+375,+CABA%0A📞+(011)+4306-7704%0AINTERNACION+Y+ATENCION+ESPECIALIZADA%0A🏥+Hosp+Neuropsiquiátrico+Braulio+Angel+Moyano%0A📍+Brandsen+2570,+CABA%0A📞+(011)+4301-3655%0A%0AATENCION+EN+SALUD+MENTAL%0A🏥+Hosp+alt="QR Contactos Salud">
-        <p>💚NUMEROS QUE AYUDAN💚</p>
+    <div class="header">
+        <h1>💚 Redes que Cuidan</h1>
+        <p style="color: white; margin:0;">Información útil de Salud Mental</p>
     </div>
 
+    <div class="card">
+        <h2> Hospitales y dispositivos especializados</h2>
+        <h3>🏥Hospital Nacional Bonaparte</h3>
+        <p>📍Combate de los Pozos 2133, CABA</p>
+        <a href="tel:01143050091" class="btn-call">📞 LLAMAR 4305-0091 </a>
+    </div>
+
+    <div class="card">
+        <h3>Prevención al Suicida</h3>
+        <p>Línea gratuita nacional 24hs</p>
+        <a href="tel:08003451435" class="btn-call">📞 LLAMAR 08003451435 </a>
+    </div>
+    <div class="card">
+        <h2>Hospitales y dispositivos especializados</h2>
+        <h3>🏥Hosp. de Emergencias Alvear</h3>
+        <p>📍Av. Warnes 2630, CABA</p>
+        <a href="tel:01145210090" class="btn-call">📞 LLAMAR: 4521-0090</a>
+    </div>
+
+    <div class="card">
+        <h2>Urgencias Psiquiátricas</h2>
+        <h3>🏥 Hospital de salud mental José T. Borda</h3>
+        <p>Dr. Ramón Carrillo 375, CABA</p>
+        <a href="tel:01143067704" class="btn-call">📞 LLAMAR: 4306-7704</a>
+    </div>
+
+    <div class="card">
+        <h2>Internación y atención especializada</h2>
+        <h3>🏥 Hosp. Neuropsiquiátrico Moyano</h3>
+        <p>📍Brandsen 2570, CABA</p>
+        <a href="tel:01143013655" class="btn-call">📞 LLAMAR: 4301-3655</a>
+    </div>
+
+    <div class="card">
+        <h2>Atencion en Salud Mental</h2>
+        <h3>🏥Hospital Infanto Juvenil Tobar García</h3>
+        <p>📍 Dr. Ramón Carrillo 315, CABA</p>
+        <a href="tel:0114305-6108" class="btn-call">📞 LLAMAR: 4305-6108</a>
+    </div>
+    <div  class="card">
+        <h2>Atención en niños y adolescentes</h2>
+        <h3>🏥Centros de salud mental (ambulatorios)</h3>
+        <p>📍Centro de Salud Mental Nº 3 Arturo Ameghino
+        📍 Av. Córdoba 3120, CABA</p>
+        <a href="tel:0114864-0224" class="btn-call">📞 LLAMAR: 4864-0224</a>
+    </div>
+    <div class="card">        
+        <h2>Atención ambulatoria (consultas, terapia, seguimiento)</h2>
+        <h3>🏥Centro de Salud Mental y Acción Social Nº 1</h3>
+        <p>📍 Manuela Pedraza 1558, CABA</p>
+        <a href="tel:01133494435" class="btn-call">📞 LLAMAR: 3349-4435</a>
+            <h3>🏥Centro de Salud Mental (Solís 994)</h3>
+            <p>📍 Solís 994, CABA</p>
+            <a href="tel:01133494435" class="btn-call">📞 LLAMAR: 3349-4435</a>
+        </div>
+    </div>
+        <div class="card"> 
+        <h2>Atención comunitaria</h2>
+        <p>Líneas telefónicas importantes (dispositivos de orientación)</p>
+        <p> 📍Salud Mental Responde</p>
+        <a href="tel:08003331665" class="btn-call">📞 0800-333-1665 (24 hs)</a>
+    </div> 
+<div class="card"> 
+        <h2>Orientación, contención y derivación</h2>
+        <h3>Buenos Aires</h3>
+        <p>📍• SAME (emergencias)</p>
+        <a href="tel:107" class="btn-call">📞 107 (24 hs)</a>
+    </div> 
 </body>
 </html>
